@@ -30,7 +30,7 @@ function ServicesPage() {
                     key={s.slug}
                     to="/service/$slug"
                     params={{ slug: s.slug }}
-                    className="group overflow-hidden rounded-2xl border border-border bg-card hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] hover:border-primary/40 transition-all"
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 bg-white hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] hover:border-primary/30 transition-all"
                   >
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img
@@ -39,15 +39,14 @@ function ServicesPage() {
                         loading="lazy"
                         width={800}
                         height={600}
-                        className="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.45),transparent_55%)]" />
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-xl group-hover:text-primary transition-colors">{s.title}</h3>
+                    <div className="flex flex-col flex-1 p-6">
+                      <h3 className="text-xl text-primary font-medium">{s.title}</h3>
                       <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.blurb}</p>
-                      <span className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                        Details <ChevronRight className="size-4" />
+                      <span className="mt-auto pt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] text-primary font-medium">
+                        Details <ChevronRight className="size-4 transition-transform group-hover:translate-x-1" />
                       </span>
                     </div>
                   </Link>
