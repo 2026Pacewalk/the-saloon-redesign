@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 
 import { Header } from "@/components/site/Header";
+import { HeroSlider } from "@/components/site/HeroSlider";
 import { Footer } from "@/components/site/Footer";
 import { AppointmentForm } from "@/components/site/AppointmentForm";
 import { CONTACT, REVIEWS, GOOGLE } from "@/lib/site-data";
@@ -48,52 +49,7 @@ function Home() {
     <div className="min-h-screen">
       <Header />
 
-      {/* HERO */}
-      <section id="top" className="relative overflow-hidden" style={{ background: "var(--gradient-blush)" }}>
-        <div className="container-x grid lg:grid-cols-2 gap-12 py-16 lg:py-24 items-center">
-          <div className="relative z-10">
-            <span className="eyebrow">Est. Ladies-Only Salon</span>
-            <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
-              Look <span className="script text-primary text-6xl md:text-7xl lg:text-8xl align-baseline">fabulous</span>,
-              <br /> Feel great.
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-              At <strong className="text-foreground">{CONTACT.name}</strong> we believe in beauty with a conscience — a full-service parlour delivering
-              quality hair, skin and bridal services in an inviting, ladies-only setting.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-4">
-              <Link to="/appointment" className="btn-primary"><Calendar className="size-4" /> Fix an Appointment</Link>
-              <Link to="/services" className="btn-ghost">Our Services <ChevronRight className="size-4" /></Link>
-            </div>
-            <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
-              {[{ n: "8+", l: "Years of Craft" }, { n: "2K+", l: "Happy Clients" }, { n: "30+", l: "Signature Services" }].map((s) => (
-                <div key={s.l}>
-                  <div className="text-3xl md:text-4xl text-primary font-display">{s.n}</div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">{s.l}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-accent/30 blur-2xl" />
-            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/5]">
-              <img src={hero} alt="Beauty treatment at 1st Lady Salon" className="w-full h-full object-cover" width={1600} height={1800} />
-              <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, transparent 60%, oklch(0.2 0.05 15 / 0.5) 100%)" }} />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-background/95 backdrop-blur rounded-2xl px-5 py-4 shadow-xl border border-border animate-float">
-              <div className="flex items-center gap-1 text-gold">
-                {[...Array(5)].map((_, i) => <Star key={i} className="size-4 fill-current" />)}
-              </div>
-              <div className="text-sm mt-1 font-medium">Rated {GOOGLE.rating.toFixed(1)} / 5</div>
-              <div className="text-xs text-muted-foreground">{GOOGLE.count} Google reviews</div>
-            </div>
-            <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground rounded-full size-28 md:size-32 flex flex-col items-center justify-center text-center shadow-xl">
-              <span className="script text-3xl leading-none">Only</span>
-              <span className="text-xs uppercase tracking-widest mt-1">For Ladies</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* VALUE STRIP */}
       <section className="border-y border-border bg-card">
