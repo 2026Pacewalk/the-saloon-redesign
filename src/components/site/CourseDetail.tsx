@@ -76,11 +76,19 @@ export function CourseDetail({ slug }: { slug: string }) {
             <h2 className="text-3xl">Related {course.group} courses</h2>
             <div className="mt-8 grid sm:grid-cols-3 gap-5">
               {related.map((c) => (
-                <Link key={c.slug} to="/$courseSlug" params={{ courseSlug: c.slug }} className="group rounded-2xl border border-border bg-card p-6 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] transition-all">
-                  <div className="text-xs uppercase tracking-widest text-primary">{c.duration}</div>
-                  <h3 className="mt-2 text-xl group-hover:text-primary transition-colors">{c.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{c.summary}</p>
+                <Link key={c.slug} to="/$courseSlug" params={{ courseSlug: c.slug }} className="group overflow-hidden rounded-2xl border border-border bg-card hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] transition-all">
+                  {c.img && (
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img src={c.img} alt={c.title} loading="lazy" className="size-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                  )}
+                  <div className="p-6">
+                    <div className="text-xs uppercase tracking-widest text-primary">{c.duration}</div>
+                    <h3 className="mt-2 text-xl group-hover:text-primary transition-colors">{c.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{c.summary}</p>
+                  </div>
                 </Link>
+
               ))}
             </div>
           </div>
