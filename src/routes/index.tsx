@@ -16,9 +16,8 @@ import facial from "@/assets/facial.jpg";
 import nails from "@/assets/nails.jpg";
 import hair from "@/assets/hair.jpg";
 import interior from "@/assets/interior.jpg";
-import galleryHair from "@/assets/gallery-hair.png";
-import galleryFacial from "@/assets/gallery-facial.png";
-import galleryBridal from "@/assets/gallery-bridal.png";
+import galleryHair from "@/assets/gallery-hair.jpg";
+import galleryFacial from "@/assets/gallery-facial.jpg";
 import svcHairStyling from "@/assets/svc-hair-styling.jpg";
 import svcHairColor from "@/assets/svc-hair-color.jpg";
 import svcThreading from "@/assets/svc-threading.jpg";
@@ -41,7 +40,7 @@ const services = [
   { icon: HandHeart, img: svcHandsFeet, title: "Hands & Feet", items: "Pedicure, Manicure, Aroma, Paraffin Wax, Spa, French Manicure" },
 ];
 
-const gallery = [galleryHair, galleryBridal, galleryFacial, hair, facial, nails, bridal, interior];
+const gallery = [galleryHair, galleryFacial, hair, facial, nails, bridal, interior];
 
 
 function Home() {

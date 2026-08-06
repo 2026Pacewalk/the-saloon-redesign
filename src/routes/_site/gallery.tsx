@@ -6,9 +6,8 @@ import facial from "@/assets/facial.jpg";
 import nails from "@/assets/nails.jpg";
 import hair from "@/assets/hair.jpg";
 import interior from "@/assets/interior.jpg";
-import galleryHair from "@/assets/gallery-hair.png";
-import galleryFacial from "@/assets/gallery-facial.png";
-import galleryBridal from "@/assets/gallery-bridal.png";
+import galleryHair from "@/assets/gallery-hair.jpg";
+import galleryFacial from "@/assets/gallery-facial.jpg";
 import aromaMassageImg from "@/assets/svc-aroma-massage.jpg";
 import beautyCareImg from "@/assets/svc-beauty-care.jpg";
 import bridalImg from "@/assets/svc-bridal.jpg";
@@ -45,7 +44,7 @@ import g3 from "@/assets/g3.jpg.asset.json";
 
 export const Route = createFileRoute("/_site/gallery")({ component: GalleryPage });
 
-const images = [hero, galleryHair, bridal, hair, facial, galleryFacial, nails, interior, galleryBridal, g1.url, g2.url, g3.url, courseMehndi, aromaMassageImg, beautyCareImg, bridalImg, browTintImg, cuticleImg, dayMakeupImg, electrolysisImg, eveningMakeupImg, extensionsImg, eyelashesImg, facialImg, filePolishImg, hairColorImg, hairStylingImg, handsFeetImg, honeyWrapImg, iplImg, lashTintImg, longHairImg, makeupLessonImg, maniPediImg, ozoneImg, shellacImg, shortHairImg, stoneTherapyImg, sugaringImg, threadingImg, updoImg, waxingImg];
+const images = [hero, galleryHair, bridal, hair, facial, galleryFacial, nails, interior, g1.url, g2.url, g3.url, courseMehndi, aromaMassageImg, beautyCareImg, bridalImg, browTintImg, cuticleImg, dayMakeupImg, electrolysisImg, eveningMakeupImg, extensionsImg, eyelashesImg, facialImg, filePolishImg, hairColorImg, hairStylingImg, handsFeetImg, honeyWrapImg, iplImg, lashTintImg, longHairImg, makeupLessonImg, maniPediImg, ozoneImg, shellacImg, shortHairImg, stoneTherapyImg, sugaringImg, threadingImg, updoImg, waxingImg];
 
 function GalleryPage() {
   return (

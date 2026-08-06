@@ -37,7 +37,7 @@ export function Header() {
       <div className="hidden md:block text-background text-xs" style={{ background: "var(--gradient-rose)" }}>
         <div className="container-x flex items-center justify-between py-2">
           <span className="flex items-center gap-2 font-medium tracking-wide">
-            <Sparkles className="size-3.5" /> Ladies-Only Salon &amp; Beauty Academy · Bagha Purana
+            <Sparkles className="size-3.5" /> Ladies Salon &amp; Beauty Academy · Bagha Purana
           </span>
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5"><Clock className="size-3.5" /> {CONTACT.hours}</span>
@@ -119,7 +119,7 @@ export function Header() {
               </button>
             </div>
             <p className="relative mt-3 text-sm text-background/90 flex items-center gap-2">
-              <Sparkles className="size-3.5" /> Ladies-Only Salon &amp; Beauty Academy
+              <Sparkles className="size-3.5" /> Ladies Salon &amp; Beauty Academy
             </p>
           </div>
 

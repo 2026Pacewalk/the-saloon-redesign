@@ -5,7 +5,7 @@ import { SERVICES } from "@/lib/site-data";
 
 export const Route = createFileRoute("/_site/services")({ component: ServicesPage });
 
-const GROUPS = ["Hair", "Make-up", "Nails", "Skin & Spa", "Hair Removal"] as const;
+const GROUPS = ["Hair", "Make-up", "Nails", "Hair Removal"] as const;
 
 function ServicesPage() {
   return (

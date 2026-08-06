@@ -7,6 +7,10 @@ import svcBeautyCare from "@/assets/svc-beauty-care.jpg";
 
 // Service imagery
 import imgHairStyling from "@/assets/svc-hair-styling.jpg";
+import imgAroma from "@/assets/svc-aroma-massage.jpg";
+import imgStone from "@/assets/svc-stone-therapy.jpg";
+import imgOzone from "@/assets/svc-ozone.jpg";
+import imgHoney from "@/assets/svc-honey-wrap.jpg";
 import imgShortHair from "@/assets/svc-short-hair.jpg";
 import imgLongHair from "@/assets/svc-long-hair.jpg";
 import imgUpdo from "@/assets/svc-updo.jpg";
@@ -20,10 +24,6 @@ import imgManiPedi from "@/assets/svc-mani-pedi.jpg";
 import imgShellac from "@/assets/svc-shellac.jpg";
 import imgCuticle from "@/assets/svc-cuticle.jpg";
 import imgExtensions from "@/assets/svc-extensions.jpg";
-import imgAroma from "@/assets/svc-aroma-massage.jpg";
-import imgStone from "@/assets/svc-stone-therapy.jpg";
-import imgOzone from "@/assets/svc-ozone.jpg";
-import imgHoney from "@/assets/svc-honey-wrap.jpg";
 import imgBrowTint from "@/assets/svc-brow-tint.jpg";
 import imgLashTint from "@/assets/svc-lash-tint.jpg";
 import imgWaxing from "@/assets/svc-waxing.jpg";
@@ -144,16 +144,10 @@ export const SERVICES: Service[] = [
   { slug: "shellac-coating", title: "Shellac Coating", group: "Nails", blurb: "Long-lasting, high-shine shellac gel coating." , img: imgShellac },
   { slug: "cuticle-removal", title: "Cuticle Removal", group: "Nails", blurb: "Gentle cuticle care for neat, healthy-looking nails." , img: imgCuticle },
   { slug: "extra-long-corners", title: "Extra Long Corners", group: "Nails", blurb: "Sculpted extensions with dramatic length and shape." , img: imgExtensions },
-  { slug: "aroma-massage", title: "Aroma Massage", group: "Skin & Spa", blurb: "Relaxing aromatherapy massage to soothe body and mind." , img: imgAroma },
-  { slug: "stone-therapy", title: "Stone Therapy", group: "Skin & Spa", blurb: "Warm-stone therapy that eases tension and improves circulation." , img: imgStone },
-  { slug: "ozone-therapy", title: "Ozone Therapy", group: "Skin & Spa", blurb: "Skin-purifying ozone treatment for a clear, radiant complexion." , img: imgOzone },
-  { slug: "honey-wrappings", title: "Honey Wrappings", group: "Skin & Spa", blurb: "Nourishing honey body wrap that hydrates and softens skin." , img: imgHoney },
-  { slug: "eyebrow-tint", title: "Eyebrow Tint", group: "Skin & Spa", blurb: "Precise brow tinting to define and frame your eyes." , img: imgBrowTint },
-  { slug: "eyelash-tint", title: "Eyelash Tint", group: "Skin & Spa", blurb: "Lash tinting for darker, fuller-looking lashes without mascara." , img: imgLashTint },
+  { slug: "eyebrow-tint", title: "Eyebrow Tint", group: "Make-up", blurb: "Precise brow tinting to define and frame your eyes." , img: imgBrowTint },
+  { slug: "eyelash-tint", title: "Eyelash Tint", group: "Make-up", blurb: "Lash tinting for darker, fuller-looking lashes without mascara." , img: imgLashTint },
   { slug: "waxing", title: "Waxing", group: "Hair Removal", blurb: "Full-body and facial waxing for smooth, long-lasting results." , img: imgWaxing },
   { slug: "sugaring", title: "Sugaring", group: "Hair Removal", blurb: "Natural sugaring hair removal, gentle on sensitive skin." , img: imgSugaring },
-  { slug: "electrolysis", title: "Electrolysis", group: "Hair Removal", blurb: "Permanent hair removal, treated hair by hair." , img: imgElectrolysis },
-  { slug: "ipl-hair-removal", title: "IPL Hair Removal", group: "Hair Removal", blurb: "Advanced IPL treatment for lasting hair reduction." , img: imgIpl },
 ];
 
 // ---- Courses — grouped, slugs preserved ------------------------------------
