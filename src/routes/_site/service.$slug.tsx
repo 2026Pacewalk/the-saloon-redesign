@@ -34,6 +34,13 @@ function ServiceDetailPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x grid lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2">
+            <img
+              src={service.img}
+              alt={`${service.title} at 1st Lady Hair & Beauty Salon`}
+              width={800}
+              height={600}
+              className="w-full aspect-[16/9] object-cover rounded-2xl border border-border shadow-[var(--shadow-soft)] mb-10"
+            />
             <h2 className="text-3xl md:text-4xl">About this service</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
               Our {service.title.toLowerCase()} is performed by trained specialists using premium, skin-friendly
