@@ -18,18 +18,26 @@ import interior from "@/assets/interior.jpg";
 import galleryHair from "@/assets/gallery-hair.png";
 import galleryFacial from "@/assets/gallery-facial.png";
 import galleryBridal from "@/assets/gallery-bridal.png";
+import svcHairStyling from "@/assets/svc-hair-styling.jpg";
+import svcHairColor from "@/assets/svc-hair-color.jpg";
+import svcThreading from "@/assets/svc-threading.jpg";
+import svcBeautyCare from "@/assets/svc-beauty-care.jpg";
+import svcFacial from "@/assets/svc-facial.jpg";
+import svcBridal from "@/assets/svc-bridal.jpg";
+import svcWaxing from "@/assets/svc-waxing.jpg";
+import svcHandsFeet from "@/assets/svc-hands-feet.jpg";
 
 export const Route = createFileRoute("/")({ component: Home });
 
 const services = [
-  { icon: Scissors, title: "Hair Styling", items: "Cuts, Trims, Blow Dry, Hair SPA, Tong, Head Massage, Children Cuts" },
-  { icon: Palette, title: "Hair Care & Color", items: "Global Color, Trendy Shades, Streaking, Root Touch-up, Keratin, Rebonding" },
-  { icon: Flower2, title: "Threading", items: "Eye Brows, Upper Lip, Chin, Full Face" },
-  { icon: Sparkles, title: "Beauty Care", items: "Clean-up, Fruit / Aroma / Herbal / Golden / Pearl Facials, Skin Lightening" },
-  { icon: Droplet, title: "Facial Treatments", items: "Face & Neck, Legs, Arms and Full Body luxury facials" },
-  { icon: Crown, title: "Bridal Make Over", items: "Bridal Make-up, Reception Look, Bridal Hair-do, Saree Drape, Mehendi" },
-  { icon: Wand2, title: "Waxing", items: "Under Arms, Full Arms, Full Legs, Body & Face Waxing" },
-  { icon: HandHeart, title: "Hands & Feet", items: "Pedicure, Manicure, Aroma, Paraffin Wax, Spa, French Manicure" },
+  { icon: Scissors, img: svcHairStyling, title: "Hair Styling", items: "Cuts, Trims, Blow Dry, Hair SPA, Tong, Head Massage, Children Cuts" },
+  { icon: Palette, img: svcHairColor, title: "Hair Care & Color", items: "Global Color, Trendy Shades, Streaking, Root Touch-up, Keratin, Rebonding" },
+  { icon: Flower2, img: svcThreading, title: "Threading", items: "Eye Brows, Upper Lip, Chin, Full Face" },
+  { icon: Sparkles, img: svcBeautyCare, title: "Beauty Care", items: "Clean-up, Fruit / Aroma / Herbal / Golden / Pearl Facials, Skin Lightening" },
+  { icon: Droplet, img: svcFacial, title: "Facial Treatments", items: "Face & Neck, Legs, Arms and Full Body luxury facials" },
+  { icon: Crown, img: svcBridal, title: "Bridal Make Over", items: "Bridal Make-up, Reception Look, Bridal Hair-do, Saree Drape, Mehendi" },
+  { icon: Wand2, img: svcWaxing, title: "Waxing", items: "Under Arms, Full Arms, Full Legs, Body & Face Waxing" },
+  { icon: HandHeart, img: svcHandsFeet, title: "Hands & Feet", items: "Pedicure, Manicure, Aroma, Paraffin Wax, Spa, French Manicure" },
 ];
 
 const gallery = [galleryHair, galleryBridal, galleryFacial, hair, facial, nails, bridal, interior];
