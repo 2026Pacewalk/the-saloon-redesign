@@ -1,6 +1,32 @@
 // Central content + structure for the 1st Lady Hair & Beauty Salon site.
 // Slugs mirror the original WordPress site for SEO continuity.
 
+// Service imagery
+import imgHairStyling from "@/assets/svc-hair-styling.jpg";
+import imgShortHair from "@/assets/svc-short-hair.jpg";
+import imgLongHair from "@/assets/svc-long-hair.jpg";
+import imgUpdo from "@/assets/svc-updo.jpg";
+import imgBridal from "@/assets/svc-bridal.jpg";
+import imgDayMakeup from "@/assets/svc-day-makeup.jpg";
+import imgEveningMakeup from "@/assets/svc-evening-makeup.jpg";
+import imgMakeupLesson from "@/assets/svc-makeup-lesson.jpg";
+import imgEyelashes from "@/assets/svc-eyelashes.jpg";
+import imgFilePolish from "@/assets/svc-file-polish.jpg";
+import imgManiPedi from "@/assets/svc-mani-pedi.jpg";
+import imgShellac from "@/assets/svc-shellac.jpg";
+import imgCuticle from "@/assets/svc-cuticle.jpg";
+import imgExtensions from "@/assets/svc-extensions.jpg";
+import imgAroma from "@/assets/svc-aroma-massage.jpg";
+import imgStone from "@/assets/svc-stone-therapy.jpg";
+import imgOzone from "@/assets/svc-ozone.jpg";
+import imgHoney from "@/assets/svc-honey-wrap.jpg";
+import imgBrowTint from "@/assets/svc-brow-tint.jpg";
+import imgLashTint from "@/assets/svc-lash-tint.jpg";
+import imgWaxing from "@/assets/svc-waxing.jpg";
+import imgSugaring from "@/assets/svc-sugaring.jpg";
+import imgElectrolysis from "@/assets/svc-electrolysis.jpg";
+import imgIpl from "@/assets/svc-ipl.jpg";
+
 export type NavChild = { label: string; to: string };
 export type NavItem = { label: string; to: string; children?: NavChild[] };
 
@@ -96,33 +122,34 @@ export type Service = {
   title: string;
   group: "Hair" | "Make-up" | "Nails" | "Skin & Spa" | "Hair Removal";
   blurb: string;
+  img: string;
 };
 
 export const SERVICES: Service[] = [
-  { slug: "professional-makeup", title: "Haircut & Style", group: "Hair", blurb: "Precision cuts, blow-dry and styling tailored to your face shape and hair type." },
-  { slug: "short-hair-style", title: "Short Hair Style", group: "Hair", blurb: "Chic, easy-to-maintain short styles finished with a polished shape." },
-  { slug: "sexy-candlelit-eyes", title: "Long Hair Style", group: "Hair", blurb: "Soft waves, sleek blow-outs and elegant looks for long hair." },
-  { slug: "up-doevening-style", title: "Updo / Evening Style", group: "Hair", blurb: "Sculpted updos and evening styling for parties and special occasions." },
-  { slug: "brides-make-up", title: "Bride's Make-up", group: "Make-up", blurb: "Complete bridal make-over with long-lasting, camera-ready finish." },
-  { slug: "daytime-make-up", title: "Daytime Make-up", group: "Make-up", blurb: "Fresh, natural daytime looks that let your features shine." },
-  { slug: "evening-make-up", title: "Evening Make-up", group: "Make-up", blurb: "Glamorous evening make-up with defined eyes and flawless base." },
-  { slug: "make-up-lesson", title: "Make-up Lesson", group: "Make-up", blurb: "One-on-one lessons to master your everyday and party make-up." },
-  { slug: "creative-eyelashes", title: "Creative Eyelashes", group: "Make-up", blurb: "Lash extensions and creative lash work for a striking eye." },
-  { slug: "file-and-polish", title: "File and Polish", group: "Nails", blurb: "Quick nail shaping and a glossy polish finish." },
-  { slug: "mini-mani-pedi", title: "Mini Mani-Pedi", group: "Nails", blurb: "Express manicure and pedicure to refresh hands and feet." },
-  { slug: "shellac-coating", title: "Shellac Coating", group: "Nails", blurb: "Long-lasting, high-shine shellac gel coating." },
-  { slug: "cuticle-removal", title: "Cuticle Removal", group: "Nails", blurb: "Gentle cuticle care for neat, healthy-looking nails." },
-  { slug: "extra-long-corners", title: "Extra Long Corners", group: "Nails", blurb: "Sculpted extensions with dramatic length and shape." },
-  { slug: "aroma-massage", title: "Aroma Massage", group: "Skin & Spa", blurb: "Relaxing aromatherapy massage to soothe body and mind." },
-  { slug: "stone-therapy", title: "Stone Therapy", group: "Skin & Spa", blurb: "Warm-stone therapy that eases tension and improves circulation." },
-  { slug: "ozone-therapy", title: "Ozone Therapy", group: "Skin & Spa", blurb: "Skin-purifying ozone treatment for a clear, radiant complexion." },
-  { slug: "honey-wrappings", title: "Honey Wrappings", group: "Skin & Spa", blurb: "Nourishing honey body wrap that hydrates and softens skin." },
-  { slug: "eyebrow-tint", title: "Eyebrow Tint", group: "Skin & Spa", blurb: "Precise brow tinting to define and frame your eyes." },
-  { slug: "eyelash-tint", title: "Eyelash Tint", group: "Skin & Spa", blurb: "Lash tinting for darker, fuller-looking lashes without mascara." },
-  { slug: "waxing", title: "Waxing", group: "Hair Removal", blurb: "Full-body and facial waxing for smooth, long-lasting results." },
-  { slug: "sugaring", title: "Sugaring", group: "Hair Removal", blurb: "Natural sugaring hair removal, gentle on sensitive skin." },
-  { slug: "electrolysis", title: "Electrolysis", group: "Hair Removal", blurb: "Permanent hair removal, treated hair by hair." },
-  { slug: "ipl-hair-removal", title: "IPL Hair Removal", group: "Hair Removal", blurb: "Advanced IPL treatment for lasting hair reduction." },
+  { slug: "professional-makeup", title: "Haircut & Style", group: "Hair", blurb: "Precision cuts, blow-dry and styling tailored to your face shape and hair type." , img: imgHairStyling },
+  { slug: "short-hair-style", title: "Short Hair Style", group: "Hair", blurb: "Chic, easy-to-maintain short styles finished with a polished shape." , img: imgShortHair },
+  { slug: "sexy-candlelit-eyes", title: "Long Hair Style", group: "Hair", blurb: "Soft waves, sleek blow-outs and elegant looks for long hair." , img: imgLongHair },
+  { slug: "up-doevening-style", title: "Updo / Evening Style", group: "Hair", blurb: "Sculpted updos and evening styling for parties and special occasions." , img: imgUpdo },
+  { slug: "brides-make-up", title: "Bride's Make-up", group: "Make-up", blurb: "Complete bridal make-over with long-lasting, camera-ready finish." , img: imgBridal },
+  { slug: "daytime-make-up", title: "Daytime Make-up", group: "Make-up", blurb: "Fresh, natural daytime looks that let your features shine." , img: imgDayMakeup },
+  { slug: "evening-make-up", title: "Evening Make-up", group: "Make-up", blurb: "Glamorous evening make-up with defined eyes and flawless base." , img: imgEveningMakeup },
+  { slug: "make-up-lesson", title: "Make-up Lesson", group: "Make-up", blurb: "One-on-one lessons to master your everyday and party make-up." , img: imgMakeupLesson },
+  { slug: "creative-eyelashes", title: "Creative Eyelashes", group: "Make-up", blurb: "Lash extensions and creative lash work for a striking eye." , img: imgEyelashes },
+  { slug: "file-and-polish", title: "File and Polish", group: "Nails", blurb: "Quick nail shaping and a glossy polish finish." , img: imgFilePolish },
+  { slug: "mini-mani-pedi", title: "Mini Mani-Pedi", group: "Nails", blurb: "Express manicure and pedicure to refresh hands and feet." , img: imgManiPedi },
+  { slug: "shellac-coating", title: "Shellac Coating", group: "Nails", blurb: "Long-lasting, high-shine shellac gel coating." , img: imgShellac },
+  { slug: "cuticle-removal", title: "Cuticle Removal", group: "Nails", blurb: "Gentle cuticle care for neat, healthy-looking nails." , img: imgCuticle },
+  { slug: "extra-long-corners", title: "Extra Long Corners", group: "Nails", blurb: "Sculpted extensions with dramatic length and shape." , img: imgExtensions },
+  { slug: "aroma-massage", title: "Aroma Massage", group: "Skin & Spa", blurb: "Relaxing aromatherapy massage to soothe body and mind." , img: imgAroma },
+  { slug: "stone-therapy", title: "Stone Therapy", group: "Skin & Spa", blurb: "Warm-stone therapy that eases tension and improves circulation." , img: imgStone },
+  { slug: "ozone-therapy", title: "Ozone Therapy", group: "Skin & Spa", blurb: "Skin-purifying ozone treatment for a clear, radiant complexion." , img: imgOzone },
+  { slug: "honey-wrappings", title: "Honey Wrappings", group: "Skin & Spa", blurb: "Nourishing honey body wrap that hydrates and softens skin." , img: imgHoney },
+  { slug: "eyebrow-tint", title: "Eyebrow Tint", group: "Skin & Spa", blurb: "Precise brow tinting to define and frame your eyes." , img: imgBrowTint },
+  { slug: "eyelash-tint", title: "Eyelash Tint", group: "Skin & Spa", blurb: "Lash tinting for darker, fuller-looking lashes without mascara." , img: imgLashTint },
+  { slug: "waxing", title: "Waxing", group: "Hair Removal", blurb: "Full-body and facial waxing for smooth, long-lasting results." , img: imgWaxing },
+  { slug: "sugaring", title: "Sugaring", group: "Hair Removal", blurb: "Natural sugaring hair removal, gentle on sensitive skin." , img: imgSugaring },
+  { slug: "electrolysis", title: "Electrolysis", group: "Hair Removal", blurb: "Permanent hair removal, treated hair by hair." , img: imgElectrolysis },
+  { slug: "ipl-hair-removal", title: "IPL Hair Removal", group: "Hair Removal", blurb: "Advanced IPL treatment for lasting hair reduction." , img: imgIpl },
 ];
 
 // ---- Courses — grouped, slugs preserved ------------------------------------
