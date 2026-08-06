@@ -106,7 +106,7 @@ export function HeroSlider() {
               />
             ))}
             <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, transparent 55%, oklch(0.2 0.05 15 / 0.75) 100%)" }} />
-            <div className="absolute bottom-0 inset-x-0 p-10 lg:p-12">
+            <div className="absolute bottom-0 inset-x-0 p-10 lg:p-12 text-right">
               <div className="text-xs uppercase tracking-[0.3em] text-primary-foreground/70">
                 0{i + 1} — 0{slides.length}
               </div>
