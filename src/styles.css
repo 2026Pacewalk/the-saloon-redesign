@@ -96,3 +96,7 @@
 
 @keyframes float-slow { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
 @utility animate-float { animation: float-slow 6s ease-in-out infinite; }
+
+@keyframes marquee-x { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@utility marquee-track { animation: marquee-x 50s linear infinite; }
+.marquee-mask:hover .marquee-track { animation-play-state: paused; }

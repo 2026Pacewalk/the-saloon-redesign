@@ -9,38 +9,305 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as StaffPortal9f3k2x7qm8RouteImport } from './routes/staff-portal-9f3k2x7qm8'
+import { Route as SiteRouteImport } from './routes/_site'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SiteVisionAndMissionRouteImport } from './routes/_site/vision-and-mission'
+import { Route as SiteVacanciesRouteImport } from './routes/_site/vacancies'
+import { Route as SiteShopRouteImport } from './routes/_site/shop'
+import { Route as SiteServicesRouteImport } from './routes/_site/services'
+import { Route as SiteResultRouteImport } from './routes/_site/result'
+import { Route as SiteReservationRouteImport } from './routes/_site/reservation'
+import { Route as SiteOverviewRouteImport } from './routes/_site/overview'
+import { Route as SiteNewsAndEventsRouteImport } from './routes/_site/news-and-events'
+import { Route as SiteGalleryRouteImport } from './routes/_site/gallery'
+import { Route as SiteFrenchiseEnquiryRouteImport } from './routes/_site/frenchise-enquiry'
+import { Route as SiteFaqRouteImport } from './routes/_site/faq'
+import { Route as SiteCoursesRouteImport } from './routes/_site/courses'
+import { Route as SiteContactsRouteImport } from './routes/_site/contacts'
+import { Route as SiteCompanyHistoryRouteImport } from './routes/_site/company-history'
+import { Route as SiteBlogRouteImport } from './routes/_site/blog'
+import { Route as SiteAppointmentRouteImport } from './routes/_site/appointment'
+import { Route as SiteAccreditationRouteImport } from './routes/_site/accreditation'
+import { Route as SiteCourseSlugRouteImport } from './routes/_site/$courseSlug'
+import { Route as SiteServiceSlugRouteImport } from './routes/_site/service.$slug'
 
+const StaffPortal9f3k2x7qm8Route = StaffPortal9f3k2x7qm8RouteImport.update({
+  id: '/staff-portal-9f3k2x7qm8',
+  path: '/staff-portal-9f3k2x7qm8',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SiteRoute = SiteRouteImport.update({
+  id: '/_site',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SiteVisionAndMissionRoute = SiteVisionAndMissionRouteImport.update({
+  id: '/vision-and-mission',
+  path: '/vision-and-mission',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteVacanciesRoute = SiteVacanciesRouteImport.update({
+  id: '/vacancies',
+  path: '/vacancies',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteShopRoute = SiteShopRouteImport.update({
+  id: '/shop',
+  path: '/shop',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteServicesRoute = SiteServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteResultRoute = SiteResultRouteImport.update({
+  id: '/result',
+  path: '/result',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteReservationRoute = SiteReservationRouteImport.update({
+  id: '/reservation',
+  path: '/reservation',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteOverviewRoute = SiteOverviewRouteImport.update({
+  id: '/overview',
+  path: '/overview',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteNewsAndEventsRoute = SiteNewsAndEventsRouteImport.update({
+  id: '/news-and-events',
+  path: '/news-and-events',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteGalleryRoute = SiteGalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteFrenchiseEnquiryRoute = SiteFrenchiseEnquiryRouteImport.update({
+  id: '/frenchise-enquiry',
+  path: '/frenchise-enquiry',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteFaqRoute = SiteFaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteCoursesRoute = SiteCoursesRouteImport.update({
+  id: '/courses',
+  path: '/courses',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteContactsRoute = SiteContactsRouteImport.update({
+  id: '/contacts',
+  path: '/contacts',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteCompanyHistoryRoute = SiteCompanyHistoryRouteImport.update({
+  id: '/company-history',
+  path: '/company-history',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteBlogRoute = SiteBlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteAppointmentRoute = SiteAppointmentRouteImport.update({
+  id: '/appointment',
+  path: '/appointment',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteAccreditationRoute = SiteAccreditationRouteImport.update({
+  id: '/accreditation',
+  path: '/accreditation',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteCourseSlugRoute = SiteCourseSlugRouteImport.update({
+  id: '/$courseSlug',
+  path: '/$courseSlug',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteServiceSlugRoute = SiteServiceSlugRouteImport.update({
+  id: '/service/$slug',
+  path: '/service/$slug',
+  getParentRoute: () => SiteRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/staff-portal-9f3k2x7qm8': typeof StaffPortal9f3k2x7qm8Route
+  '/$courseSlug': typeof SiteCourseSlugRoute
+  '/accreditation': typeof SiteAccreditationRoute
+  '/appointment': typeof SiteAppointmentRoute
+  '/blog': typeof SiteBlogRoute
+  '/company-history': typeof SiteCompanyHistoryRoute
+  '/contacts': typeof SiteContactsRoute
+  '/courses': typeof SiteCoursesRoute
+  '/faq': typeof SiteFaqRoute
+  '/frenchise-enquiry': typeof SiteFrenchiseEnquiryRoute
+  '/gallery': typeof SiteGalleryRoute
+  '/news-and-events': typeof SiteNewsAndEventsRoute
+  '/overview': typeof SiteOverviewRoute
+  '/reservation': typeof SiteReservationRoute
+  '/result': typeof SiteResultRoute
+  '/services': typeof SiteServicesRoute
+  '/shop': typeof SiteShopRoute
+  '/vacancies': typeof SiteVacanciesRoute
+  '/vision-and-mission': typeof SiteVisionAndMissionRoute
+  '/service/$slug': typeof SiteServiceSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/staff-portal-9f3k2x7qm8': typeof StaffPortal9f3k2x7qm8Route
+  '/$courseSlug': typeof SiteCourseSlugRoute
+  '/accreditation': typeof SiteAccreditationRoute
+  '/appointment': typeof SiteAppointmentRoute
+  '/blog': typeof SiteBlogRoute
+  '/company-history': typeof SiteCompanyHistoryRoute
+  '/contacts': typeof SiteContactsRoute
+  '/courses': typeof SiteCoursesRoute
+  '/faq': typeof SiteFaqRoute
+  '/frenchise-enquiry': typeof SiteFrenchiseEnquiryRoute
+  '/gallery': typeof SiteGalleryRoute
+  '/news-and-events': typeof SiteNewsAndEventsRoute
+  '/overview': typeof SiteOverviewRoute
+  '/reservation': typeof SiteReservationRoute
+  '/result': typeof SiteResultRoute
+  '/services': typeof SiteServicesRoute
+  '/shop': typeof SiteShopRoute
+  '/vacancies': typeof SiteVacanciesRoute
+  '/vision-and-mission': typeof SiteVisionAndMissionRoute
+  '/service/$slug': typeof SiteServiceSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_site': typeof SiteRouteWithChildren
+  '/staff-portal-9f3k2x7qm8': typeof StaffPortal9f3k2x7qm8Route
+  '/_site/$courseSlug': typeof SiteCourseSlugRoute
+  '/_site/accreditation': typeof SiteAccreditationRoute
+  '/_site/appointment': typeof SiteAppointmentRoute
+  '/_site/blog': typeof SiteBlogRoute
+  '/_site/company-history': typeof SiteCompanyHistoryRoute
+  '/_site/contacts': typeof SiteContactsRoute
+  '/_site/courses': typeof SiteCoursesRoute
+  '/_site/faq': typeof SiteFaqRoute
+  '/_site/frenchise-enquiry': typeof SiteFrenchiseEnquiryRoute
+  '/_site/gallery': typeof SiteGalleryRoute
+  '/_site/news-and-events': typeof SiteNewsAndEventsRoute
+  '/_site/overview': typeof SiteOverviewRoute
+  '/_site/reservation': typeof SiteReservationRoute
+  '/_site/result': typeof SiteResultRoute
+  '/_site/services': typeof SiteServicesRoute
+  '/_site/shop': typeof SiteShopRoute
+  '/_site/vacancies': typeof SiteVacanciesRoute
+  '/_site/vision-and-mission': typeof SiteVisionAndMissionRoute
+  '/_site/service/$slug': typeof SiteServiceSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/staff-portal-9f3k2x7qm8'
+    | '/$courseSlug'
+    | '/accreditation'
+    | '/appointment'
+    | '/blog'
+    | '/company-history'
+    | '/contacts'
+    | '/courses'
+    | '/faq'
+    | '/frenchise-enquiry'
+    | '/gallery'
+    | '/news-and-events'
+    | '/overview'
+    | '/reservation'
+    | '/result'
+    | '/services'
+    | '/shop'
+    | '/vacancies'
+    | '/vision-and-mission'
+    | '/service/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/staff-portal-9f3k2x7qm8'
+    | '/$courseSlug'
+    | '/accreditation'
+    | '/appointment'
+    | '/blog'
+    | '/company-history'
+    | '/contacts'
+    | '/courses'
+    | '/faq'
+    | '/frenchise-enquiry'
+    | '/gallery'
+    | '/news-and-events'
+    | '/overview'
+    | '/reservation'
+    | '/result'
+    | '/services'
+    | '/shop'
+    | '/vacancies'
+    | '/vision-and-mission'
+    | '/service/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/_site'
+    | '/staff-portal-9f3k2x7qm8'
+    | '/_site/$courseSlug'
+    | '/_site/accreditation'
+    | '/_site/appointment'
+    | '/_site/blog'
+    | '/_site/company-history'
+    | '/_site/contacts'
+    | '/_site/courses'
+    | '/_site/faq'
+    | '/_site/frenchise-enquiry'
+    | '/_site/gallery'
+    | '/_site/news-and-events'
+    | '/_site/overview'
+    | '/_site/reservation'
+    | '/_site/result'
+    | '/_site/services'
+    | '/_site/shop'
+    | '/_site/vacancies'
+    | '/_site/vision-and-mission'
+    | '/_site/service/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SiteRoute: typeof SiteRouteWithChildren
+  StaffPortal9f3k2x7qm8Route: typeof StaffPortal9f3k2x7qm8Route
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/staff-portal-9f3k2x7qm8': {
+      id: '/staff-portal-9f3k2x7qm8'
+      path: '/staff-portal-9f3k2x7qm8'
+      fullPath: '/staff-portal-9f3k2x7qm8'
+      preLoaderRoute: typeof StaffPortal9f3k2x7qm8RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_site': {
+      id: '/_site'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof SiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,12 +315,203 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_site/vision-and-mission': {
+      id: '/_site/vision-and-mission'
+      path: '/vision-and-mission'
+      fullPath: '/vision-and-mission'
+      preLoaderRoute: typeof SiteVisionAndMissionRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/vacancies': {
+      id: '/_site/vacancies'
+      path: '/vacancies'
+      fullPath: '/vacancies'
+      preLoaderRoute: typeof SiteVacanciesRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/shop': {
+      id: '/_site/shop'
+      path: '/shop'
+      fullPath: '/shop'
+      preLoaderRoute: typeof SiteShopRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/services': {
+      id: '/_site/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof SiteServicesRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/result': {
+      id: '/_site/result'
+      path: '/result'
+      fullPath: '/result'
+      preLoaderRoute: typeof SiteResultRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/reservation': {
+      id: '/_site/reservation'
+      path: '/reservation'
+      fullPath: '/reservation'
+      preLoaderRoute: typeof SiteReservationRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/overview': {
+      id: '/_site/overview'
+      path: '/overview'
+      fullPath: '/overview'
+      preLoaderRoute: typeof SiteOverviewRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/news-and-events': {
+      id: '/_site/news-and-events'
+      path: '/news-and-events'
+      fullPath: '/news-and-events'
+      preLoaderRoute: typeof SiteNewsAndEventsRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/gallery': {
+      id: '/_site/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof SiteGalleryRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/frenchise-enquiry': {
+      id: '/_site/frenchise-enquiry'
+      path: '/frenchise-enquiry'
+      fullPath: '/frenchise-enquiry'
+      preLoaderRoute: typeof SiteFrenchiseEnquiryRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/faq': {
+      id: '/_site/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof SiteFaqRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/courses': {
+      id: '/_site/courses'
+      path: '/courses'
+      fullPath: '/courses'
+      preLoaderRoute: typeof SiteCoursesRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/contacts': {
+      id: '/_site/contacts'
+      path: '/contacts'
+      fullPath: '/contacts'
+      preLoaderRoute: typeof SiteContactsRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/company-history': {
+      id: '/_site/company-history'
+      path: '/company-history'
+      fullPath: '/company-history'
+      preLoaderRoute: typeof SiteCompanyHistoryRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/blog': {
+      id: '/_site/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof SiteBlogRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/appointment': {
+      id: '/_site/appointment'
+      path: '/appointment'
+      fullPath: '/appointment'
+      preLoaderRoute: typeof SiteAppointmentRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/accreditation': {
+      id: '/_site/accreditation'
+      path: '/accreditation'
+      fullPath: '/accreditation'
+      preLoaderRoute: typeof SiteAccreditationRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/$courseSlug': {
+      id: '/_site/$courseSlug'
+      path: '/$courseSlug'
+      fullPath: '/$courseSlug'
+      preLoaderRoute: typeof SiteCourseSlugRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/service/$slug': {
+      id: '/_site/service/$slug'
+      path: '/service/$slug'
+      fullPath: '/service/$slug'
+      preLoaderRoute: typeof SiteServiceSlugRouteImport
+      parentRoute: typeof SiteRoute
+    }
   }
 }
 
+interface SiteRouteChildren {
+  SiteCourseSlugRoute: typeof SiteCourseSlugRoute
+  SiteAccreditationRoute: typeof SiteAccreditationRoute
+  SiteAppointmentRoute: typeof SiteAppointmentRoute
+  SiteBlogRoute: typeof SiteBlogRoute
+  SiteCompanyHistoryRoute: typeof SiteCompanyHistoryRoute
+  SiteContactsRoute: typeof SiteContactsRoute
+  SiteCoursesRoute: typeof SiteCoursesRoute
+  SiteFaqRoute: typeof SiteFaqRoute
+  SiteFrenchiseEnquiryRoute: typeof SiteFrenchiseEnquiryRoute
+  SiteGalleryRoute: typeof SiteGalleryRoute
+  SiteNewsAndEventsRoute: typeof SiteNewsAndEventsRoute
+  SiteOverviewRoute: typeof SiteOverviewRoute
+  SiteReservationRoute: typeof SiteReservationRoute
+  SiteResultRoute: typeof SiteResultRoute
+  SiteServicesRoute: typeof SiteServicesRoute
+  SiteShopRoute: typeof SiteShopRoute
+  SiteVacanciesRoute: typeof SiteVacanciesRoute
+  SiteVisionAndMissionRoute: typeof SiteVisionAndMissionRoute
+  SiteServiceSlugRoute: typeof SiteServiceSlugRoute
+}
+
+const SiteRouteChildren: SiteRouteChildren = {
+  SiteCourseSlugRoute: SiteCourseSlugRoute,
+  SiteAccreditationRoute: SiteAccreditationRoute,
+  SiteAppointmentRoute: SiteAppointmentRoute,
+  SiteBlogRoute: SiteBlogRoute,
+  SiteCompanyHistoryRoute: SiteCompanyHistoryRoute,
+  SiteContactsRoute: SiteContactsRoute,
+  SiteCoursesRoute: SiteCoursesRoute,
+  SiteFaqRoute: SiteFaqRoute,
+  SiteFrenchiseEnquiryRoute: SiteFrenchiseEnquiryRoute,
+  SiteGalleryRoute: SiteGalleryRoute,
+  SiteNewsAndEventsRoute: SiteNewsAndEventsRoute,
+  SiteOverviewRoute: SiteOverviewRoute,
+  SiteReservationRoute: SiteReservationRoute,
+  SiteResultRoute: SiteResultRoute,
+  SiteServicesRoute: SiteServicesRoute,
+  SiteShopRoute: SiteShopRoute,
+  SiteVacanciesRoute: SiteVacanciesRoute,
+  SiteVisionAndMissionRoute: SiteVisionAndMissionRoute,
+  SiteServiceSlugRoute: SiteServiceSlugRoute,
+}
+
+const SiteRouteWithChildren = SiteRoute._addFileChildren(SiteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SiteRoute: SiteRouteWithChildren,
+  StaffPortal9f3k2x7qm8Route: StaffPortal9f3k2x7qm8Route,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
