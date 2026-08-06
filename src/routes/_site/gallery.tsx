@@ -9,10 +9,43 @@ import interior from "@/assets/interior.jpg";
 import galleryHair from "@/assets/gallery-hair.png";
 import galleryFacial from "@/assets/gallery-facial.png";
 import galleryBridal from "@/assets/gallery-bridal.png";
+import aromaMassageImg from "@/assets/svc-aroma-massage.jpg";
+import beautyCareImg from "@/assets/svc-beauty-care.jpg";
+import bridalImg from "@/assets/svc-bridal.jpg";
+import browTintImg from "@/assets/svc-brow-tint.jpg";
+import cuticleImg from "@/assets/svc-cuticle.jpg";
+import dayMakeupImg from "@/assets/svc-day-makeup.jpg";
+import electrolysisImg from "@/assets/svc-electrolysis.jpg";
+import eveningMakeupImg from "@/assets/svc-evening-makeup.jpg";
+import extensionsImg from "@/assets/svc-extensions.jpg";
+import eyelashesImg from "@/assets/svc-eyelashes.jpg";
+import facialImg from "@/assets/svc-facial.jpg";
+import filePolishImg from "@/assets/svc-file-polish.jpg";
+import hairColorImg from "@/assets/svc-hair-color.jpg";
+import hairStylingImg from "@/assets/svc-hair-styling.jpg";
+import handsFeetImg from "@/assets/svc-hands-feet.jpg";
+import honeyWrapImg from "@/assets/svc-honey-wrap.jpg";
+import iplImg from "@/assets/svc-ipl.jpg";
+import lashTintImg from "@/assets/svc-lash-tint.jpg";
+import longHairImg from "@/assets/svc-long-hair.jpg";
+import makeupLessonImg from "@/assets/svc-makeup-lesson.jpg";
+import maniPediImg from "@/assets/svc-mani-pedi.jpg";
+import ozoneImg from "@/assets/svc-ozone.jpg";
+import shellacImg from "@/assets/svc-shellac.jpg";
+import shortHairImg from "@/assets/svc-short-hair.jpg";
+import stoneTherapyImg from "@/assets/svc-stone-therapy.jpg";
+import sugaringImg from "@/assets/svc-sugaring.jpg";
+import threadingImg from "@/assets/svc-threading.jpg";
+import updoImg from "@/assets/svc-updo.jpg";
+import waxingImg from "@/assets/svc-waxing.jpg";
+import courseMehndi from "@/assets/course-mehndi.jpg";
+import g1 from "@/assets/g1.jpg.asset.json";
+import g2 from "@/assets/g2.jpg.asset.json";
+import g3 from "@/assets/g3.jpg.asset.json";
 
 export const Route = createFileRoute("/_site/gallery")({ component: GalleryPage });
 
-const images = [hero, galleryHair, bridal, hair, facial, galleryFacial, nails, interior, galleryBridal];
+const images = [hero, galleryHair, bridal, hair, facial, galleryFacial, nails, interior, galleryBridal, g1.url, g2.url, g3.url, courseMehndi, aromaMassageImg, beautyCareImg, bridalImg, browTintImg, cuticleImg, dayMakeupImg, electrolysisImg, eveningMakeupImg, extensionsImg, eyelashesImg, facialImg, filePolishImg, hairColorImg, hairStylingImg, handsFeetImg, honeyWrapImg, iplImg, lashTintImg, longHairImg, makeupLessonImg, maniPediImg, ozoneImg, shellacImg, shortHairImg, stoneTherapyImg, sugaringImg, threadingImg, updoImg, waxingImg];
 
 function GalleryPage() {
   return (
