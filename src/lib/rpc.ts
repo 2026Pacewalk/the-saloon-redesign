@@ -52,14 +52,16 @@ export const adminLogout = createServerFn({ method: "POST" })
 export const adminMe = createServerFn({ method: "GET" })
   .handler(async () => (await import("@/server/impl")).adminMe());
 
+type SafeRow = Record<string, string | number | boolean | null>;
+
 export const listAppointments = createServerFn({ method: "GET" })
-  .handler(async () => (await import("@/server/impl")).listAppointments());
+  .handler(async () => (await import("@/server/impl")).listAppointments() as unknown as Promise<{ rows: SafeRow[] }>);
 
 export const listContacts = createServerFn({ method: "GET" })
-  .handler(async () => (await import("@/server/impl")).listContacts());
+  .handler(async () => (await import("@/server/impl")).listContacts() as unknown as Promise<{ rows: SafeRow[] }>);
 
 export const listCoursesAndResults = createServerFn({ method: "GET" })
-  .handler(async () => (await import("@/server/impl")).listCoursesAndResults());
+  .handler(async () => (await import("@/server/impl")).listCoursesAndResults() as unknown as Promise<{ courses: SafeRow[]; results: SafeRow[] }>);
 
 export const addCourse = createServerFn({ method: "POST" })
   .validator((d: unknown) => z.object({ coursename: z.string().min(2).max(200) }).parse(d))

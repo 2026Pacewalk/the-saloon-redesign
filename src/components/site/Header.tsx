@@ -129,12 +129,10 @@ export function Header() {
               { Icon: Phone, label: "Call", href: CONTACT.phoneHref },
               { Icon: MessageCircle, label: "WhatsApp", href: SOCIAL.whatsapp, external: true },
               { Icon: MapPin, label: "Map", href: CONTACT.mapLink, external: true },
-            ].map(({ Icon, label, to, href, external }) => {
+            ].map(({ Icon, label, href, external }) => {
               const cls = "flex flex-col items-center gap-1.5 rounded-xl border border-border bg-card py-3 text-[11px] font-medium text-foreground/80 hover:border-primary/40 hover:text-primary transition-colors";
               const inner = (<><span className="grid place-items-center size-9 rounded-full bg-blush text-primary"><Icon className="size-4" /></span>{label}</>);
-              return to
-                ? <Link key={label} to={to} onClick={() => setOpen(false)} className={cls}>{inner}</Link>
-                : <a key={label} href={href} target={external ? "_blank" : undefined} rel={external ? "noreferrer" : undefined} onClick={() => setOpen(false)} className={cls}>{inner}</a>;
+              return <a key={label} href={href} target={external ? "_blank" : undefined} rel={external ? "noreferrer" : undefined} onClick={() => setOpen(false)} className={cls}>{inner}</a>;
             })}
           </div>
 
