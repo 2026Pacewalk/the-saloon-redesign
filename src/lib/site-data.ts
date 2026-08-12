@@ -57,6 +57,16 @@ export const SOCIAL = {
   email: "mailto:info@1stladysaloon.com",
 };
 
+// ---- Instagram reels (shortcodes) shown on the homepage --------------------
+export const INSTAGRAM = {
+  profile: "https://www.instagram.com/1stladyhairandbeautysalon",
+  handle: "@1stladyhairandbeautysalon",
+  reels: [
+    "Db5rNQuTuGv", "Db3JXBkTxmK", "DbsxFPaTdUX", "DblJTM5zsNz", "Dbdbon_zNBu",
+    "DbQhI_dTtAz", "DbN-5RDGCN8", "DbGNDWlz1Dq", "Dar2sbzzoS6", "Dafr-EkzZEb",
+  ],
+};
+
 // ---- Google reviews ---------------------------------------------------------
 // Live rating shown on Google Maps. `writeReview` opens the place so guests can
 // leave a review; `readReviews` opens all reviews.

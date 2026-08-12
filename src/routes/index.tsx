@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Scissors, Sparkles, Flower2, Palette, HandHeart, Crown, Droplet, Wand2,
-  MapPin, Phone, Clock, Star, ChevronRight, Calendar, Award, Leaf, Users,
+  MapPin, Phone, Clock, Star, ChevronRight, Calendar, Award, Leaf, Users, Instagram, Play,
 } from "lucide-react";
 
 import { Header } from "@/components/site/Header";
 import { HeroSlider } from "@/components/site/HeroSlider";
 import { Footer } from "@/components/site/Footer";
 import { AppointmentForm } from "@/components/site/AppointmentForm";
-import { CONTACT, REVIEWS, GOOGLE } from "@/lib/site-data";
+import { CONTACT, REVIEWS, GOOGLE, INSTAGRAM } from "@/lib/site-data";
 
 import hero from "@/assets/hero.jpg";
 import bridal from "@/assets/bridal.jpg";
@@ -158,6 +158,45 @@ function Home() {
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: "var(--gradient-overlay)" }} />
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INSTAGRAM REELS */}
+      <section id="reels" className="py-20 lg:py-28" style={{ background: "var(--gradient-blush)" }}>
+        <div className="container-x">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="eyebrow">@1stladyhairandbeautysalon</span>
+            <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl">Our work, <span className="script text-primary text-5xl md:text-6xl lg:text-7xl">in motion</span></h2>
+            <p className="mt-5 text-muted-foreground leading-relaxed">
+              Bridal transformations, trending hairstyles and glowing makeovers — watch real looks we create every week.
+              Hit play, then follow along on Instagram for your next inspiration.
+            </p>
+          </div>
+
+          <div className="mt-12 flex gap-5 overflow-x-auto pb-5 snap-x snap-mandatory [scrollbar-width:thin]">
+            {INSTAGRAM.reels.map((code) => (
+              <div key={code} className="snap-start shrink-0 w-[300px] rounded-2xl overflow-hidden border border-border bg-card shadow-[var(--shadow-soft)]">
+                <iframe
+                  src={`https://www.instagram.com/reel/${code}/embed`}
+                  title="1st Lady Salon Instagram reel"
+                  loading="lazy"
+                  scrolling="no"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  className="w-full block"
+                  style={{ height: 540, border: 0 }}
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a href={INSTAGRAM.profile} target="_blank" rel="noreferrer" className="btn-primary">
+              <Instagram className="size-4" /> Follow us on Instagram
+            </a>
+            <p className="mt-3 text-sm text-muted-foreground flex items-center justify-center gap-1.5">
+              <Play className="size-3.5" /> Swipe to watch more reels
+            </p>
           </div>
         </div>
       </section>
