@@ -1,10 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Mail, MessageCircle, MapPin, Phone, Clock, Calendar, ArrowUp, ChevronRight } from "lucide-react";
+import { Facebook, Instagram, Mail, MessageCircle, MapPin, Phone, Clock, Calendar, ArrowUp, ChevronRight, User } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { CONTACT, SOCIAL } from "@/lib/site-data";
 
 const socials = [
-  { Icon: Facebook, href: SOCIAL.facebook, label: "Facebook" },
+  { Icon: Facebook, href: SOCIAL.facebook, label: "Facebook Page" },
+  { Icon: User, href: SOCIAL.facebookProfile, label: "Facebook Profile" },
+  { Icon: Instagram, href: SOCIAL.instagram, label: "Instagram" },
   { Icon: MessageCircle, href: SOCIAL.whatsapp, label: "WhatsApp" },
   { Icon: Mail, href: SOCIAL.email, label: "Email" },
 ];

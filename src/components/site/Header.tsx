@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import {
   Clock, Phone, Menu, X, ChevronDown, MessageCircle, Calendar, Sparkles,
-  Home, Info, GraduationCap, Image as ImageIcon, Award, ShoppingBag, LayoutGrid, MapPin, Facebook, Mail,
+  Home, Info, GraduationCap, Image as ImageIcon, Award, ShoppingBag, LayoutGrid, MapPin, Facebook, Instagram, Mail,
 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { NAV, CONTACT, SOCIAL } from "@/lib/site-data";
@@ -189,7 +189,7 @@ export function Header() {
             <div className="flex items-center justify-between">
               <span className="text-xs text-muted-foreground flex items-center gap-1.5"><Clock className="size-3.5" /> {CONTACT.hours}</span>
               <div className="flex gap-2">
-                {[{ Icon: Facebook, href: SOCIAL.facebook }, { Icon: MessageCircle, href: SOCIAL.whatsapp }, { Icon: Mail, href: SOCIAL.email }].map(({ Icon, href }, i) => (
+                {[{ Icon: Facebook, href: SOCIAL.facebook }, { Icon: Instagram, href: SOCIAL.instagram }, { Icon: MessageCircle, href: SOCIAL.whatsapp }, { Icon: Mail, href: SOCIAL.email }].map(({ Icon, href }, i) => (
                   <a key={i} href={href} target="_blank" rel="noreferrer" className="grid place-items-center size-8 rounded-full border border-border text-primary hover:bg-blush transition-colors">
                     <Icon className="size-3.5" />
                   </a>

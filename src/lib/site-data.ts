@@ -50,7 +50,9 @@ export const CONTACT = {
 };
 
 export const SOCIAL = {
-  facebook: "https://www.facebook.com/1stladysaloon/",
+  facebook: "https://www.facebook.com/1stladysaloon",
+  facebookProfile: "https://www.facebook.com/firstladysalon.baghapurana",
+  instagram: "https://www.instagram.com/1stladyhairandbeautysalon",
   whatsapp: "https://wa.me/919501504300",
   email: "mailto:info@1stladysaloon.com",
 };
