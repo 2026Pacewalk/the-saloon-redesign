@@ -41,7 +41,7 @@ import courseMehndi from "@/assets/course-mehndi.jpg";
 
 export const Route = createFileRoute("/_site/gallery")({ component: GalleryPage });
 
-const images = ["/gallery/work-1.jpg", "/gallery/work-2.jpg", "/gallery/work-3.jpg", "/gallery/work-4.jpg", hero, galleryHair, bridal, hair, facial, galleryFacial, nails, interior, courseMehndi, aromaMassageImg, beautyCareImg, bridalImg, browTintImg, cuticleImg, dayMakeupImg, electrolysisImg, eveningMakeupImg, extensionsImg, eyelashesImg, facialImg, filePolishImg, hairColorImg, hairStylingImg, handsFeetImg, honeyWrapImg, iplImg, lashTintImg, longHairImg, makeupLessonImg, maniPediImg, ozoneImg, shellacImg, shortHairImg, stoneTherapyImg, sugaringImg, threadingImg, updoImg, waxingImg];
+const images = ["/gallery/work-1.jpg", "/gallery/work-2.jpg", "/gallery/work-3.jpg", "/gallery/work-4.jpg", "/gallery/salon-1.jpg", "/gallery/salon-2.jpg", hero, galleryHair, bridal, hair, facial, galleryFacial, nails, interior, courseMehndi, aromaMassageImg, beautyCareImg, bridalImg, browTintImg, cuticleImg, dayMakeupImg, electrolysisImg, eveningMakeupImg, extensionsImg, eyelashesImg, facialImg, filePolishImg, hairColorImg, hairStylingImg, handsFeetImg, honeyWrapImg, iplImg, lashTintImg, longHairImg, makeupLessonImg, maniPediImg, ozoneImg, shellacImg, shortHairImg, stoneTherapyImg, sugaringImg, threadingImg, updoImg, waxingImg];
 
 function GalleryPage() {
   return (

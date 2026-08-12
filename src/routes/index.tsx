@@ -40,7 +40,7 @@ const services = [
   { icon: HandHeart, img: svcHandsFeet, title: "Hands & Feet", items: "Pedicure, Manicure, Aroma, Paraffin Wax, Spa, French Manicure" },
 ];
 
-const gallery = ["/gallery/work-1.jpg", "/gallery/work-2.jpg", "/gallery/work-4.jpg", "/gallery/work-3.jpg", galleryHair, galleryFacial, hair, facial, nails, bridal, interior];
+const gallery = ["/gallery/work-1.jpg", "/gallery/work-2.jpg", "/gallery/work-4.jpg", "/gallery/work-3.jpg", "/gallery/salon-1.jpg", galleryHair, galleryFacial, hair, "/gallery/salon-2.jpg", facial, nails, bridal, interior];
 
 
 function Home() {
