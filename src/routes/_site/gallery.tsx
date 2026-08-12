@@ -38,13 +38,10 @@ import threadingImg from "@/assets/svc-threading.jpg";
 import updoImg from "@/assets/svc-updo.jpg";
 import waxingImg from "@/assets/svc-waxing.jpg";
 import courseMehndi from "@/assets/course-mehndi.jpg";
-import g1 from "@/assets/g1.jpg.asset.json";
-import g2 from "@/assets/g2.jpg.asset.json";
-import g3 from "@/assets/g3.jpg.asset.json";
 
 export const Route = createFileRoute("/_site/gallery")({ component: GalleryPage });
 
-const images = [hero, galleryHair, bridal, hair, facial, galleryFacial, nails, interior, g1.url, g2.url, g3.url, courseMehndi, aromaMassageImg, beautyCareImg, bridalImg, browTintImg, cuticleImg, dayMakeupImg, electrolysisImg, eveningMakeupImg, extensionsImg, eyelashesImg, facialImg, filePolishImg, hairColorImg, hairStylingImg, handsFeetImg, honeyWrapImg, iplImg, lashTintImg, longHairImg, makeupLessonImg, maniPediImg, ozoneImg, shellacImg, shortHairImg, stoneTherapyImg, sugaringImg, threadingImg, updoImg, waxingImg];
+const images = ["/gallery/work-1.jpg", "/gallery/work-2.jpg", "/gallery/work-3.jpg", "/gallery/work-4.jpg", hero, galleryHair, bridal, hair, facial, galleryFacial, nails, interior, courseMehndi, aromaMassageImg, beautyCareImg, bridalImg, browTintImg, cuticleImg, dayMakeupImg, electrolysisImg, eveningMakeupImg, extensionsImg, eyelashesImg, facialImg, filePolishImg, hairColorImg, hairStylingImg, handsFeetImg, honeyWrapImg, iplImg, lashTintImg, longHairImg, makeupLessonImg, maniPediImg, ozoneImg, shellacImg, shortHairImg, stoneTherapyImg, sugaringImg, threadingImg, updoImg, waxingImg];
 
 function GalleryPage() {
   return (
